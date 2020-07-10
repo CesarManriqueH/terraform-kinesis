@@ -1,0 +1,548 @@
+12:37:15.950 [main] INFO  c.a.s.k.s.auto.AutoscalingController - Starting Kinesis Autoscaling Agent
+12:37:16.665 [main] INFO  c.a.s.k.s.a.AutoscalingConfiguration - Loaded Configuration local /home/ubuntu/config.json
+12:37:16.941 [main] INFO  c.a.s.k.s.auto.AutoscalingController - AutoscalingController creating Stream Monitor for Stream in_stream
+12:37:20.595 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Started Stream Monitor for in_stream
+12:37:21.119 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Using Stream Scaler Version .9.8.0
+12:37:28.589 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 0.00% (0 Bytes of 1048576)
+12:37:28.670 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 0.00% (0 Records of 1000)
+12:37:28.670 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Bytes] due to higher utilisation metric 0.00%
+12:37:28.790 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 0.00% (0 Bytes of 2097152)
+12:37:28.790 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 0.00% (0 Records of 2000)
+12:37:28.791 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Bytes] due to higher utilisation metric 0.00%
+12:37:29.039 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Requesting Scale Down of Stream in_stream by 1 as [PUT, GET] has been below 30% for 5 Minutes
+12:37:29.039 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Stream in_stream: Not Scaling Down - Already at Minimum of 1 Shard
+12:37:29.039 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+12:42:32.715 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 6.05% (63,428 Bytes of 1048576)
+12:42:32.716 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 92.41% (881 Records of 1000)
+12:42:32.716 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 92.41%
+12:42:32.717 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.41% (37,607 Bytes of 2097152)
+12:42:32.717 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 46.25% (881 Records of 2000)
+12:42:32.758 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 46.25%
+12:42:33.579 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+12:42:34.809 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+12:47:37.697 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 6.80% (70,944 Bytes of 1048576)
+12:47:37.901 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 99.72% (994 Records of 1000)
+12:47:37.985 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 99.72%
+12:47:38.023 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 3.40% (72,317 Bytes of 2097152)
+12:47:38.024 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 49.59% (975 Records of 2000)
+12:47:38.024 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 49.59%
+12:47:38.899 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Requesting Scale Up of Stream in_stream by 1 as [PUT, GET] has been above 80% for 5 Minutes
+12:47:38.900 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Updating Stream in_stream Shard Count to 2
+12:47:39.848 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Waiting for Stream to transition back to Active Status
+12:48:04.973 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+12:53:06.078 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 7.01% (69,062 Bytes of 1048576)
+12:53:06.119 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 106.46% (1,094 Records of 1000)
+12:53:06.119 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 106.46%
+12:53:06.120 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 4.36% (85,145 Bytes of 2097152)
+12:53:06.198 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 61.99% (1,356 Records of 2000)
+12:53:06.200 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 61.99%
+12:53:06.491 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Stream in_stream: Deferring Scale Up until Cool Off Period of 10 Minutes has elapsed
+12:53:06.531 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+12:58:06.668 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 4.87% (101,944 Bytes of 2097152)
+12:58:06.670 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 72.61% (1,472 Records of 2000)
+12:58:06.672 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 72.61%
+12:58:06.672 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.47% (104,717 Bytes of 4194304)
+12:58:06.680 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 35.98% (1,424 Records of 4000)
+12:58:06.680 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 35.98%
+12:58:06.732 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+12:58:07.213 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+13:03:07.336 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 5.29% (99,977 Bytes of 2097152)
+13:03:07.339 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 76.06% (1,386 Records of 2000)
+13:03:07.339 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 76.06%
+13:03:07.343 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.83% (123,164 Bytes of 4194304)
+13:03:07.343 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 41.02% (1,657 Records of 4000)
+13:03:07.343 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 41.02%
+13:03:07.388 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+13:03:07.408 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+13:08:07.521 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 6.19% (131,148 Bytes of 2097152)
+13:08:07.528 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 90.17% (1,822 Records of 2000)
+13:08:07.529 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 90.17%
+13:08:07.530 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.98% (131,912 Bytes of 4194304)
+13:08:07.530 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 44.07% (1,792 Records of 4000)
+13:08:07.530 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 44.07%
+13:08:07.579 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Requesting Scale Up of Stream in_stream by 1 as [PUT, GET] has been above 80% for 5 Minutes
+13:08:07.581 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Updating Stream in_stream Shard Count to 3
+13:08:07.650 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Waiting for Stream to transition back to Active Status
+13:08:36.960 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+13:13:37.065 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 6.38% (130,546 Bytes of 2097152)
+13:13:37.067 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 92.95% (1,902 Records of 2000)
+13:13:37.067 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 92.95%
+13:13:37.069 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 3.45% (161,455 Bytes of 4194304)
+13:13:37.070 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 40.68% (1,773 Records of 4000)
+13:13:37.075 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 40.68%
+13:13:37.130 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Stream in_stream: Deferring Scale Up until Cool Off Period of 10 Minutes has elapsed
+13:13:37.142 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+13:18:37.321 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 4.67% (147,682 Bytes of 3145728)
+13:18:37.322 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 67.79% (2,057 Records of 3000)
+13:18:37.322 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 67.79%
+13:18:37.322 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.36% (147,917 Bytes of 6291456)
+13:18:37.323 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 34.43% (2,054 Records of 6000)
+13:18:37.324 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 34.43%
+13:18:37.363 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+13:18:37.387 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+13:23:37.511 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 4.98% (157,680 Bytes of 3145728)
+13:23:37.514 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 72.45% (2,181 Records of 3000)
+13:23:37.514 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 72.45%
+13:23:37.514 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.57% (156,886 Bytes of 6291456)
+13:23:37.514 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 37.39% (2,179 Records of 6000)
+13:23:37.515 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 37.39%
+13:23:37.560 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+13:23:37.578 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+13:28:37.681 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 5.31% (169,798 Bytes of 3145728)
+13:28:37.685 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 77.63% (2,358 Records of 3000)
+13:28:37.685 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 77.63%
+13:28:37.686 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.65% (169,157 Bytes of 6291456)
+13:28:37.686 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 38.28% (2,270 Records of 6000)
+13:28:37.686 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 38.28%
+13:28:37.732 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+13:28:37.766 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+13:33:37.868 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 5.71% (181,469 Bytes of 3145728)
+13:33:37.868 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 82.67% (2,520 Records of 3000)
+13:33:37.868 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 82.67%
+13:33:37.869 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.90% (181,085 Bytes of 6291456)
+13:33:37.871 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 40.69% (2,368 Records of 6000)
+13:33:37.871 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 40.69%
+13:33:37.915 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+13:33:37.943 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+13:38:38.038 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 6.29% (202,297 Bytes of 3145728)
+13:38:38.040 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 91.97% (2,810 Records of 3000)
+13:38:38.040 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 91.97%
+13:38:38.040 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 3.14% (202,775 Bytes of 6291456)
+13:38:38.040 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 46.03% (2,707 Records of 6000)
+13:38:38.041 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 46.03%
+13:38:38.084 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Requesting Scale Up of Stream in_stream by 1 as [PUT, GET] has been above 80% for 5 Minutes
+13:38:38.084 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Updating Stream in_stream Shard Count to 4
+13:38:38.161 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Waiting for Stream to transition back to Active Status
+13:39:24.667 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+13:44:24.777 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 7.13% (224,238 Bytes of 3145728)
+13:44:24.777 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 103.28% (3,082 Records of 3000)
+13:44:24.777 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 103.28%
+13:44:24.778 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 3.98% (224,066 Bytes of 6291456)
+13:44:24.778 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 88.91% (7,538 Records of 6000)
+13:44:24.778 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 88.91%
+13:44:24.818 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Stream in_stream: Deferring Scale Up until Cool Off Period of 10 Minutes has elapsed
+13:44:24.829 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+13:49:24.939 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 5.14% (212,736 Bytes of 4194304)
+13:49:24.939 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 76.34% (3,024 Records of 4000)
+13:49:24.939 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 76.34%
+13:49:24.939 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.57% (211,097 Bytes of 8388608)
+13:49:24.939 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 37.44% (2,932 Records of 8000)
+13:49:24.940 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 37.44%
+13:49:24.996 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+13:49:25.025 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+13:54:25.140 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 4.41% (177,026 Bytes of 4194304)
+13:54:25.140 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 64.22% (2,562 Records of 4000)
+13:54:25.140 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 64.22%
+13:54:25.140 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.32% (195,118 Bytes of 8388608)
+13:54:25.140 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 33.71% (2,887 Records of 8000)
+13:54:25.140 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 33.71%
+13:54:25.185 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+13:54:25.227 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+13:59:25.342 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 3.53% (138,541 Bytes of 4194304)
+13:59:25.343 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 52.27% (2,066 Records of 4000)
+13:59:25.343 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 52.27%
+13:59:25.343 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 1.79% (156,348 Bytes of 8388608)
+13:59:25.343 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 25.70% (2,063 Records of 8000)
+13:59:25.343 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 25.70%
+13:59:25.384 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+13:59:25.402 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+14:04:25.506 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 2.35% (102,902 Bytes of 4194304)
+14:04:25.506 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 37.38% (1,556 Records of 4000)
+14:04:25.506 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 37.38%
+14:04:25.507 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 1.25% (112,432 Bytes of 8388608)
+14:04:25.507 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 17.07% (1,311 Records of 8000)
+14:04:25.507 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 17.07%
+14:04:25.557 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+14:04:25.613 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+14:09:25.700 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 1.54% (58,399 Bytes of 4194304)
+14:09:25.701 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 22.71% (898 Records of 4000)
+14:09:25.701 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 22.71%
+14:09:25.702 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 0.77% (64,900 Bytes of 8388608)
+14:09:25.702 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 10.72% (814 Records of 8000)
+14:09:25.702 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 10.72%
+14:09:25.753 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Requesting Scale Down of Stream in_stream by 1 as [PUT, GET] has been below 30% for 5 Minutes
+14:09:25.753 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Updating Stream in_stream Shard Count to 3
+14:09:25.819 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Waiting for Stream to transition back to Active Status
+14:10:03.097 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+14:15:03.240 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 0.98% (41,192 Bytes of 4194304)
+14:15:03.241 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 14.49% (555 Records of 4000)
+14:15:03.241 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 14.49%
+14:15:03.241 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 0.76% (33,787 Bytes of 8388608)
+14:15:03.242 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 15.64% (2,025 Records of 8000)
+14:15:03.242 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 15.64%
+14:15:03.281 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Stream in_stream: Deferring Scale Down until Cool Off Period of 10 Minutes has elapsed
+14:15:03.300 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+14:20:03.496 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 1.01% (24,715 Bytes of 3145728)
+14:20:03.496 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 14.65% (343 Records of 3000)
+14:20:03.496 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 14.65%
+14:20:03.497 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 0.60% (38,542 Bytes of 6291456)
+14:20:03.498 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 8.42% (534 Records of 6000)
+14:20:03.498 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 8.42%
+14:20:03.540 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Requesting Scale Down of Stream in_stream by 1 as [PUT, GET] has been below 30% for 5 Minutes
+14:20:03.540 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Updating Stream in_stream Shard Count to 2
+14:20:03.618 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Waiting for Stream to transition back to Active Status
+14:20:50.118 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+14:25:50.274 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 1.22% (38,080 Bytes of 3145728)
+14:25:50.275 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 17.82% (529 Records of 3000)
+14:25:50.275 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 17.82%
+14:25:50.275 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 0.61% (38,216 Bytes of 6291456)
+14:25:50.275 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 8.36% (531 Records of 6000)
+14:25:50.275 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 8.36%
+14:25:50.310 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Stream in_stream: Deferring Scale Down until Cool Off Period of 10 Minutes has elapsed
+14:25:50.323 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+14:30:50.422 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 2.17% (47,666 Bytes of 2097152)
+14:30:50.422 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 31.94% (662 Records of 2000)
+14:30:50.422 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 31.94%
+14:30:50.422 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 1.10% (45,046 Bytes of 4194304)
+14:30:50.423 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 15.92% (659 Records of 4000)
+14:30:50.423 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 15.92%
+14:30:50.466 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+14:30:50.517 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+14:35:50.621 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 2.78% (58,200 Bytes of 2097152)
+14:35:50.621 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 40.45% (851 Records of 2000)
+14:35:50.621 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 40.45%
+14:35:50.621 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 1.40% (61,633 Bytes of 4194304)
+14:35:50.621 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 20.34% (856 Records of 4000)
+14:35:50.621 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 20.34%
+14:35:50.659 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+14:35:50.706 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+14:40:50.809 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 3.94% (84,052 Bytes of 2097152)
+14:40:50.809 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 52.64% (957 Records of 2000)
+14:40:50.809 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 52.64%
+14:40:50.809 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 1.92% (84,936 Bytes of 4194304)
+14:40:50.809 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 28.35% (1,180 Records of 4000)
+14:40:50.809 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 28.35%
+14:40:50.848 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+14:40:50.911 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+14:45:51.010 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 4.67% (101,304 Bytes of 2097152)
+14:45:51.011 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 67.64% (1,407 Records of 2000)
+14:45:51.011 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 67.64%
+14:45:51.011 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.24% (92,882 Bytes of 4194304)
+14:45:51.011 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 33.63% (1,345 Records of 4000)
+14:45:51.011 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 33.63%
+14:45:51.058 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+14:45:51.079 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+14:50:51.227 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 5.48% (108,283 Bytes of 2097152)
+14:50:51.227 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 81.55% (1,686 Records of 2000)
+14:50:51.227 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 81.55%
+14:50:51.227 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.78% (112,338 Bytes of 4194304)
+14:50:51.227 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 39.44% (1,560 Records of 4000)
+14:50:51.227 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 39.44%
+14:50:51.297 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+14:50:51.362 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+14:55:51.453 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 5.96% (123,974 Bytes of 2097152)
+14:55:51.454 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 87.53% (1,752 Records of 2000)
+14:55:51.454 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 87.53%
+14:55:51.454 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 3.01% (125,203 Bytes of 4194304)
+14:55:51.454 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 43.84% (1,763 Records of 4000)
+14:55:51.454 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 43.84%
+14:55:51.490 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Requesting Scale Up of Stream in_stream by 1 as [PUT, GET] has been above 80% for 5 Minutes
+14:55:51.490 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Updating Stream in_stream Shard Count to 3
+14:55:51.588 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - UpdateShardCount API Limit Exceeded. Falling back to manual scaling
+14:55:51.588 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Scaling Stream in_stream from 2 Shards to 3
+14:56:11.852 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Split Shard shardId-000000000025 at 33% Creating Final Shard shardId-000000000027 and Intermediate Shard Shard shardId-000000000028 - Start: 113427455640312809811712638445973955039, End: 170141183460469231731687303715884105727, Keyspace Width: 56713727820156421919974665269910150688 (16.667%)
+ (17%)
+14:56:11.852 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - in_stream: Shard Modification 33% Complete, (2 Pending, 1 Completed). Current Size 3 Shards with Approx 60 Seconds Remaining
+14:56:31.977 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Merging Shard shardId-000000000028 with shardId-000000000029
+14:56:52.193 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Created Shard shardId-000000000031 (33%)
+14:56:52.193 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - in_stream: Shard Modification 67% Complete, (1 Pending, 2 Completed). Current Size 3 Shards with Approx 90 Seconds Remaining
+14:56:52.221 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Scaling Direction: UP
+Shard shardId-000000000027 - Start: 0, End: 113427455640312809811712638445973955038, Keyspace Width: 113427455640312809811712638445973955038 (33.333%)
+Shard shardId-000000000031 - Start: 113427455640312809811712638445973955039, End: 226854911269282892207786897226553474543, Keyspace Width: 113427455628970082396074258780579519504 (33.333%)
+Shard shardId-000000000030 - Start: 226854911269282892207786897226553474544, End: 340282366920938463463374607431768211455, Keyspace Width: 113427455651655571255587710205214736911 (33.333%)
+14:56:52.221 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+15:01:52.314 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 3.85% (119,604 Bytes of 3145728)
+15:01:52.314 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 56.87% (1,679 Records of 3000)
+15:01:52.314 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 56.87%
+15:01:52.315 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 1.93% (121,208 Bytes of 6291456)
+15:01:52.315 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 28.36% (1,729 Records of 6000)
+15:01:52.315 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 28.36%
+15:01:52.356 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+15:01:52.407 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+15:06:52.493 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 3.48% (109,055 Bytes of 3145728)
+15:06:52.494 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 51.12% (1,530 Records of 3000)
+15:06:52.494 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 51.12%
+15:06:52.494 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 1.76% (111,028 Bytes of 6291456)
+15:06:52.494 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 25.36% (1,542 Records of 6000)
+15:06:52.494 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 25.36%
+15:06:52.539 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+15:06:52.715 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+15:11:52.852 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 3.38% (103,552 Bytes of 3145728)
+15:11:52.852 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 49.09% (1,438 Records of 3000)
+15:11:52.852 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 49.09%
+15:11:52.853 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 1.69% (103,565 Bytes of 6291456)
+15:11:52.853 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 24.64% (1,438 Records of 6000)
+15:11:52.853 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 24.64%
+15:11:52.889 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+15:11:52.953 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+15:16:53.049 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 3.39% (105,426 Bytes of 3145728)
+15:16:53.049 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 49.66% (1,522 Records of 3000)
+15:16:53.049 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 49.66%
+15:16:53.049 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 1.69% (104,645 Bytes of 6291456)
+15:16:53.049 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 24.69% (1,474 Records of 6000)
+15:16:53.049 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 24.69%
+15:16:53.084 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+15:16:53.110 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+15:21:53.198 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 4.11% (130,511 Bytes of 3145728)
+15:21:53.199 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 57.38% (1,867 Records of 3000)
+15:21:53.199 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 57.38%
+15:21:53.199 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.12% (131,032 Bytes of 6291456)
+15:21:53.199 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 29.24% (1,879 Records of 6000)
+15:21:53.199 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 29.24%
+15:21:53.240 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+15:21:53.317 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+15:26:53.440 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 4.40% (136,206 Bytes of 3145728)
+15:26:53.440 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 65.01% (1,974 Records of 3000)
+15:26:53.440 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 65.01%
+15:26:53.440 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.23% (142,871 Bytes of 6291456)
+15:26:53.441 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 31.99% (1,884 Records of 6000)
+15:26:53.441 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 31.99%
+15:26:53.471 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+15:26:53.488 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+15:31:53.575 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 4.78% (151,184 Bytes of 3145728)
+15:31:53.575 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 69.38% (2,092 Records of 3000)
+15:31:53.575 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 69.38%
+15:31:53.575 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.38% (151,385 Bytes of 6291456)
+15:31:53.575 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 34.63% (2,056 Records of 6000)
+15:31:53.575 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 34.63%
+15:31:53.608 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+15:31:53.630 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+15:36:53.722 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 4.71% (145,588 Bytes of 3145728)
+15:36:53.723 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 68.22% (2,022 Records of 3000)
+15:36:53.723 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 68.22%
+15:36:53.724 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.34% (145,045 Bytes of 6291456)
+15:36:53.724 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 34.05% (2,015 Records of 6000)
+15:36:53.724 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 34.05%
+15:36:53.760 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+15:36:53.799 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+15:41:53.890 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 4.90% (155,167 Bytes of 3145728)
+15:41:53.890 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 71.76% (2,155 Records of 3000)
+15:41:53.890 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 71.76%
+15:41:53.890 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.46% (154,642 Bytes of 6291456)
+15:41:53.891 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 35.79% (2,148 Records of 6000)
+15:41:53.891 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 35.79%
+15:41:53.928 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+15:41:53.946 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+15:46:54.043 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 5.32% (169,586 Bytes of 3145728)
+15:46:54.044 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 77.36% (2,336 Records of 3000)
+15:46:54.044 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 77.36%
+15:46:54.044 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.63% (169,194 Bytes of 6291456)
+15:46:54.044 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 38.49% (2,350 Records of 6000)
+15:46:54.044 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 38.49%
+15:46:54.077 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+15:46:54.092 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+15:51:54.244 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 5.49% (173,611 Bytes of 3145728)
+15:51:54.244 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 79.99% (2,411 Records of 3000)
+15:51:54.244 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 79.99%
+15:51:54.244 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.74% (172,540 Bytes of 6291456)
+15:51:54.244 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 39.91% (2,396 Records of 6000)
+15:51:54.244 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 39.91%
+15:51:54.277 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+15:51:54.298 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+15:56:54.408 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 5.71% (182,212 Bytes of 3145728)
+15:56:54.408 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 82.62% (2,456 Records of 3000)
+15:56:54.408 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 82.62%
+15:56:54.408 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.84% (176,809 Bytes of 6291456)
+15:56:54.408 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 41.79% (2,549 Records of 6000)
+15:56:54.408 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 41.79%
+15:56:54.449 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Requesting Scale Up of Stream in_stream by 1 as [PUT, GET] has been above 80% for 5 Minutes
+15:56:54.449 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Updating Stream in_stream Shard Count to 4
+15:56:54.524 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Waiting for Stream to transition back to Active Status
+15:57:26.780 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+16:02:26.916 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 5.51% (173,390 Bytes of 3145728)
+16:02:26.916 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 80.44% (2,400 Records of 3000)
+16:02:26.916 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 80.44%
+16:02:26.916 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 3.97% (327,208 Bytes of 6291456)
+16:02:26.916 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 57.80% (4,545 Records of 6000)
+16:02:26.917 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 57.80%
+16:02:26.953 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+16:02:27.002 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+16:07:27.125 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 4.20% (175,720 Bytes of 4194304)
+16:07:27.125 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 61.88% (2,504 Records of 4000)
+16:07:27.125 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 61.88%
+16:07:27.131 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.12% (175,351 Bytes of 8388608)
+16:07:27.132 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 30.87% (2,501 Records of 8000)
+16:07:27.132 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 30.87%
+16:07:27.180 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+16:07:27.217 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+16:12:27.358 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 4.27% (182,548 Bytes of 4194304)
+16:12:27.358 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 62.75% (2,535 Records of 4000)
+16:12:27.358 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 62.75%
+16:12:27.358 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.13% (180,456 Bytes of 8388608)
+16:12:27.358 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 31.02% (2,506 Records of 8000)
+16:12:27.358 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 31.02%
+16:12:27.392 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+16:12:27.416 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+16:17:27.499 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 3.55% (145,478 Bytes of 4194304)
+16:17:27.499 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 54.98% (2,328 Records of 4000)
+16:17:27.499 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 54.98%
+16:17:27.499 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.10% (172,261 Bytes of 8388608)
+16:17:27.499 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 30.84% (2,393 Records of 8000)
+16:17:27.499 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 30.84%
+16:17:37.967 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+16:17:40.848 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+16:22:40.930 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 2.83% (104,402 Bytes of 4194304)
+16:22:40.930 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 40.44% (1,548 Records of 4000)
+16:22:40.930 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 40.44%
+16:22:40.930 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.16% (142,194 Bytes of 8388608)
+16:22:40.930 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 28.88% (1,975 Records of 8000)
+16:22:40.931 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 28.88%
+16:22:41.404 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+16:22:43.403 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+16:27:43.526 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 1.89% (69,754 Bytes of 4194304)
+16:27:43.526 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 25.45% (969 Records of 4000)
+16:27:43.526 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 25.45%
+16:27:43.526 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 0.89% (69,366 Bytes of 8388608)
+16:27:43.526 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 12.96% (963 Records of 8000)
+16:27:43.526 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 12.96%
+16:27:43.553 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+16:27:43.588 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+16:32:43.688 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 1.20% (57,187 Bytes of 4194304)
+16:32:43.688 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 17.41% (598 Records of 4000)
+16:32:43.688 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 17.41%
+16:32:43.688 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 0.57% (43,061 Bytes of 8388608)
+16:32:43.688 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 7.71% (636 Records of 8000)
+16:32:43.688 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 7.71%
+16:32:43.721 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Requesting Scale Down of Stream in_stream by 1 as [PUT, GET] has been below 30% for 5 Minutes
+16:32:43.722 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Updating Stream in_stream Shard Count to 3
+16:32:43.757 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - UpdateShardCount API Limit Exceeded. Falling back to manual scaling
+16:32:43.757 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Scaling Stream in_stream from 4 Shards to 3
+16:33:03.899 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Merging Shard shardId-000000000032 with shardId-000000000040
+16:33:24.040 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Created Shard shardId-000000000042 (33%)
+16:33:24.040 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - in_stream: Shard Modification 25% Complete, (3 Pending, 1 Completed). Current Size 4 Shards with Approx 160 Seconds Remaining
+16:33:44.232 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Merging Shard shardId-000000000041 with shardId-000000000043
+16:34:04.380 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Created Shard shardId-000000000045 (33%)
+16:34:04.380 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - in_stream: Shard Modification 50% Complete, (2 Pending, 2 Completed). Current Size 4 Shards with Approx 160 Seconds Remaining
+16:34:24.584 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - in_stream: Shard Modification 75% Complete, (1 Pending, 3 Completed). Current Size 3 Shards with Approx 133 Seconds Remaining
+16:34:24.601 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Scaling Direction: DOWN
+Shard shardId-000000000042 - Start: 0, End: 113427455640312813214536307655358589672, Keyspace Width: 113427455640312813214536307655358589672 (33.333%)
+Shard shardId-000000000045 - Start: 113427455640312813214536307655358589673, End: 226854911269282892207786897226553474543, Keyspace Width: 113427455628970078993250589571194884870 (33.333%)
+Shard shardId-000000000046 - Start: 226854911269282892207786897226553474544, End: 340282366920938463463374607431768211455, Keyspace Width: 113427455651655571255587710205214736911 (33.333%)
+16:34:24.601 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+16:39:24.707 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 0.86% (26,418 Bytes of 3145728)
+16:39:24.707 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 12.55% (367 Records of 3000)
+16:39:24.707 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 12.55%
+16:39:24.707 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 0.47% (26,479 Bytes of 6291456)
+16:39:24.707 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 6.47% (411 Records of 6000)
+16:39:24.707 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 6.47%
+16:39:24.789 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Stream in_stream: Deferring Scale Down until Cool Off Period of 10 Minutes has elapsed
+16:39:24.789 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+16:44:24.882 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 0.83% (26,291 Bytes of 3145728)
+16:44:24.888 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 12.05% (359 Records of 3000)
+16:44:24.888 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 12.05%
+16:44:24.888 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 0.42% (26,302 Bytes of 6291456)
+16:44:24.888 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 6.03% (360 Records of 6000)
+16:44:24.888 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 6.03%
+16:44:24.918 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Requesting Scale Down of Stream in_stream by 1 as [PUT, GET] has been below 30% for 5 Minutes
+16:44:24.918 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Updating Stream in_stream Shard Count to 2
+16:44:24.956 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - UpdateShardCount API Limit Exceeded. Falling back to manual scaling
+16:44:24.957 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Scaling Stream in_stream from 3 Shards to 2
+16:44:45.133 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Merging Shard shardId-000000000042 with shardId-000000000047
+16:45:05.251 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Created Shard shardId-000000000049 (50%)
+16:45:05.252 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - in_stream: Shard Modification 33% Complete, (2 Pending, 1 Completed). Current Size 3 Shards with Approx 120 Seconds Remaining
+16:45:25.399 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - in_stream: Shard Modification 67% Complete, (1 Pending, 2 Completed). Current Size 2 Shards with Approx 90 Seconds Remaining
+16:45:25.417 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Scaling Direction: DOWN
+Shard shardId-000000000049 - Start: 0, End: 170141183471811976161444029428201714429, Keyspace Width: 170141183471811976161444029428201714429 (50.000%)
+Shard shardId-000000000050 - Start: 170141183471811976161444029428201714430, End: 340282366920938463463374607431768211455, Keyspace Width: 170141183449126487301930578003566497025 (50.000%)
+16:45:25.417 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+16:50:25.510 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 1.38% (29,765 Bytes of 2097152)
+16:50:25.512 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 19.85% (389 Records of 2000)
+16:50:25.512 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 19.85%
+16:50:25.512 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 0.55% (28,534 Bytes of 4194304)
+16:50:25.512 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 11.14% (396 Records of 4000)
+16:50:25.512 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 11.14%
+16:50:25.549 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Stream in_stream: Deferring Scale Down until Cool Off Period of 10 Minutes has elapsed
+16:50:25.549 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+16:55:25.626 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 1.61% (34,936 Bytes of 2097152)
+16:55:25.627 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 22.79% (437 Records of 2000)
+16:55:25.627 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 22.79%
+16:55:25.627 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 0.81% (35,027 Bytes of 4194304)
+16:55:25.627 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 11.57% (464 Records of 4000)
+16:55:25.627 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 11.57%
+16:55:25.665 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Requesting Scale Down of Stream in_stream by 1 as [PUT, GET] has been below 30% for 5 Minutes
+16:55:25.665 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Updating Stream in_stream Shard Count to 1
+16:55:25.701 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - UpdateShardCount API Limit Exceeded. Falling back to manual scaling
+16:55:25.701 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Scaling Stream in_stream from 2 Shards to 1
+16:55:45.883 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - in_stream: Minimum Shard Count of 1 Reached
+16:55:45.901 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Scaling Direction: DOWN
+Shard shardId-000000000051 - Start: 0, End: 340282366920938463463374607431768211455, Keyspace Width: 340282366920938463463374607431768211455 (100.000%)
+16:55:45.901 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+17:00:45.992 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 4.08% (42,257 Bytes of 1048576)
+17:00:45.992 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 58.19% (603 Records of 1000)
+17:00:45.992 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 58.19%
+17:00:45.992 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 1.80% (43,687 Bytes of 2097152)
+17:00:45.992 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 29.68% (607 Records of 2000)
+17:00:45.992 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 29.68%
+17:00:46.021 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+17:00:46.047 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+17:05:46.128 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 4.75% (52,409 Bytes of 1048576)
+17:05:46.128 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 70.91% (728 Records of 1000)
+17:05:46.128 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 70.91%
+17:05:46.128 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.37% (48,362 Bytes of 2097152)
+17:05:46.128 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 34.98% (700 Records of 2000)
+17:05:46.128 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 34.98%
+17:05:46.159 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+17:05:46.241 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+17:10:46.339 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 5.99% (63,167 Bytes of 1048576)
+17:10:46.340 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 89.05% (877 Records of 1000)
+17:10:46.340 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 89.05%
+17:10:46.340 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 3.01% (64,034 Bytes of 2097152)
+17:10:46.340 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 43.05% (889 Records of 2000)
+17:10:46.340 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 43.05%
+17:10:46.373 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+17:10:46.404 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+17:15:46.483 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 6.90% (71,938 Bytes of 1048576)
+17:15:46.483 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 101.01% (1,027 Records of 1000)
+17:15:46.483 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 101.01%
+17:15:46.483 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 3.39% (70,226 Bytes of 2097152)
+17:15:46.484 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 49.97% (1,018 Records of 2000)
+17:15:46.484 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 49.97%
+17:15:46.525 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Requesting Scale Up of Stream in_stream by 1 as [PUT, GET] has been above 80% for 5 Minutes
+17:15:46.525 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Updating Stream in_stream Shard Count to 2
+17:15:46.560 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - UpdateShardCount API Limit Exceeded. Falling back to manual scaling
+17:15:46.560 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Scaling Stream in_stream from 1 Shards to 2
+17:16:06.726 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Split Shard shardId-000000000051 at 50% Creating Final Shard shardId-000000000052 and Intermediate Shard Shard shardId-000000000053 - Start: 170141183460469231731687303715884105727, End: 340282366920938463463374607431768211455, Keyspace Width: 170141183460469231731687303715884105728 (50.000%)
+ (50%)
+17:16:06.726 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - in_stream: Shard Modification 50% Complete, (1 Pending, 1 Completed). Current Size 2 Shards with Approx 40 Seconds Remaining
+17:16:06.752 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Scaling Direction: UP
+Shard shardId-000000000052 - Start: 0, End: 170141183460469231731687303715884105726, Keyspace Width: 170141183460469231731687303715884105726 (50.000%)
+Shard shardId-000000000053 - Start: 170141183460469231731687303715884105727, End: 340282366920938463463374607431768211455, Keyspace Width: 170141183460469231731687303715884105728 (50.000%)
+17:16:06.752 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+17:21:06.846 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 4.06% (86,564 Bytes of 2097152)
+17:21:06.846 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 58.63% (1,133 Records of 2000)
+17:21:06.846 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 58.63%
+17:21:06.846 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.00% (86,779 Bytes of 4194304)
+17:21:06.846 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 37.06% (1,120 Records of 4000)
+17:21:06.846 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 37.06%
+17:21:06.875 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+17:21:07.127 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+17:26:07.212 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 4.18% (87,942 Bytes of 2097152)
+17:26:07.212 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 60.90% (1,222 Records of 2000)
+17:26:07.212 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 60.90%
+17:26:07.212 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 2.05% (87,869 Bytes of 4194304)
+17:26:07.212 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 29.39% (1,222 Records of 4000)
+17:26:07.212 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 29.39%
+17:26:07.253 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+17:26:07.294 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+17:31:07.383 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 3.38% (55,402 Bytes of 2097152)
+17:31:07.383 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 48.91% (769 Records of 2000)
+17:31:07.384 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Records] due to higher utilisation metric 48.91%
+17:31:07.384 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 1.83% (83,426 Bytes of 4194304)
+17:31:07.384 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 24.28% (778 Records of 4000)
+17:31:07.384 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Records] due to higher utilisation metric 24.28%
+17:31:07.423 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - No Scaling required - Stream capacity within specified tolerances
+17:31:07.449 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
+17:36:07.528 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used PUT[Bytes] Capacity ~ 0.00% (0 Bytes of 2097152)
+17:36:07.528 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used PUT[Records] Capacity ~ 0.00% (0 Records of 2000)
+17:36:07.528 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric PUT[Bytes] due to higher utilisation metric 0.00%
+17:36:07.528 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Bytes: Stream in_stream Used GET[Bytes] Capacity ~ 0.00% (0 Bytes of 4194304)
+17:36:07.529 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Records: Stream in_stream Used GET[Records] Capacity ~ 0.00% (0 Records of 4000)
+17:36:07.529 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Will decide scaling action based on metric GET[Bytes] due to higher utilisation metric 0.00%
+17:36:07.562 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Requesting Scale Down of Stream in_stream by 1 as [PUT, GET] has been below 30% for 5 Minutes
+17:36:07.562 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Updating Stream in_stream Shard Count to 1
+17:36:07.612 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - UpdateShardCount API Limit Exceeded. Falling back to manual scaling
+17:36:07.612 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - Scaling Stream in_stream from 2 Shards to 1
+17:36:27.808 [pool-1-thread-1] INFO  c.a.s.kinesis.scaling.StreamScaler - in_stream: Minimum Shard Count of 1 Reached
+17:36:27.828 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Scaling Direction: DOWN
+Shard shardId-000000000054 - Start: 0, End: 340282366920938463463374607431768211455, Keyspace Width: 340282366920938463463374607431768211455 (100.000%)
+17:36:27.828 [pool-1-thread-1] INFO  c.a.s.k.scaling.auto.StreamMonitor - Next Check Cycle in 300 seconds
